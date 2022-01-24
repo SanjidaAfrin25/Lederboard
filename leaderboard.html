@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        main {
+            max-width: 1200px;
+            margin: 0, auto;
+        }
+        
+        .top-player,
+        .course-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            place-items: center;
+        }
+        
+        .blogs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            place-items: center;
+        }
+        
+        .player,
+        .blog {
+            display: flex;
+            align-items: center;
+        }
+        
+        .player img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+        
+        .photo img {
+            width: 200px;
+            margin-right: 20px;
+        }
+        
+        .course img {
+            width: 250px;
+            margin-top: 20px;
+        }
+        
+        @media(max-width:992px) {
+            .top-player {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 40px;
+                place-items: center;
+            }
+            .blogs {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 20px;
+                place-items: center;
+            }
+        }
+        
+        @media(max-width:688px) {
+            .top-player {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 40px;
+            }
+            .blog {
+                display: block;
+            }
+            .course-info {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 20px;
+                place-items: center;
+            }
+        }
+        
+        .filled {
+            color: goldenrod;
+        }
+        
+        .unfilled {
+            color: gray;
+        }
+        
+        .course {
+            margin-top: 20px;
+            box-shadow: gray 5px 5px 5px 10px;
+            height: 300px;
+            width: 260px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Top Player</h2>
+    <div class="top-player">
+
+        <div class="player">
+            <img src="players/player-1.png" alt="">
+            <h3>jhon smith</h3>
+        </div>
+
+
+        <div class="player">
+            <img src="players/player-2.png" alt="">
+            <h3>jhon smith</h3>
+        </div>
+
+        <div class="player">
+            <img src="players/player-3.png" alt="">
+            <h3>jhon smith</h3>
+        </div>
+
+        <div class="player">
+
+            <img src="players/player-4.png" alt="">
+            <h3>jhon smith</h3>
+        </div>
+
+        <div class="player">
+
+            <img src="players/player-5.png" alt="">
+            <h3>jhon smith</h3>
+
+        </div>
+        <div class="player">
+
+            <img src="players/player-6.png" alt="">
+            <h3>john smith</h3>
+
+        </div>
+    </div>
+    <h2>Blogs</h2>
+    <div class="blogs">
+
+        <div class="blog">
+
+            <div class="photo">
+                <img src="blogs/blog-1.png" alt="">
+            </div>
+            <div class="info">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p><a href="http://lorem">Lorem, ipsum.</a></p>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="photo">
+                <img src="blogs/blog-2.png" alt="">
+            </div>
+            <div class="info">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p><a href="http://lorem">Lorem, ipsum.</a></p>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="photo">
+                <img src="blogs/blog-3.png" alt="">
+            </div>
+            <div class="info">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p><a href="http://lorem">Lorem, ipsum.</a></p>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="photo">
+                <img src="blogs/blog-4.png" alt="">
+            </div>
+            <div class="info">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p><a href="http://lorem">Lorem, ipsum.</a></p>
+            </div>
+        </div>
+    </div>
+    <h2>Courses</h2>
+    <div class="course-info">
+        <div class="course">
+            <img src="courses/course-1.png" alt="">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star unfilled"></i>
+        </div>
+        <div class="course">
+            <img src="courses/course-2.png" alt="">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star unfilled"></i>
+        </div>
+        <div class="course">
+            <img src="courses/course-3.png" alt="">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star unfilled"></i>
+        </div>
+
+    </div>
+</body>
+
+</html>
